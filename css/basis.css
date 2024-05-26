@@ -1,0 +1,115 @@
+/* ===================================
+Basis.css wird in style.css per @import 
+eingebunden
+===================================== */
+
+
+
+/* Globale Einstellungen für die gesamte Webseite */
+/*=================================================*/
+
+/* border-box aktivieren */
+*,*::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Sanftes Scrollen aktivieren */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Collapsing Margins vermeiden */
+h1, h2, h3, h4, h5, h6, 
+p, ul, ol, blockquote {
+    margin-top: 0;
+}
+
+img, video { 
+    max-width: 100%;
+    height: auto;
+}
+
+figure, blockquote {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/* =========================================================== */
+
+
+
+
+/* Grundlegende Gestaltung von Schrift und Text */
+/* ============================================================= */
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+}
+
+h1 { font-size:  2.5rem;}
+h2 { font-size: 2rem;}
+h3 { font-size: 1.75rem;}
+h4 { font-size: 1.5rem;}
+h5 { font-size: 1.25rem;}
+h6 { font-size: 1rem;}
+
+
+h1,h2,h3,h4 { font-weight: 600}
+
+
+/* Unterstreichung für Hyperlinks gestalten */
+a { 
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.1875em;
+}
+
+/* Kontakdaten nicht kursiv */
+address { font-style: normal;}
+
+/* ========================================================= */
+
+
+
+/* Nützliche, allgemeine Klassen */
+/* ========================================================= */
+
+/* Boxen am Bildschirm ausblenden */
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    margin: -1px !important;
+    clip: rect(0, 0, 0, 0) !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+}
+
+/* floats umschließen */
+.float-umschliessen { overflow: hidden; }
+@supports (display: flow-root) {
+    .float-umschliessen {
+        display: flow-root;
+        overflow: initial;
+    }
+}
+/* Ende sSupports */
+
+/* ========================================================= */
+
+/* Klassen zum Floaten & clearen */
+/* ============================================================ */
+  .float-rechts { float: right; margin: 0 0 0 1rem;}
+  .float-left { float: left; margin: 0 1rem 0 0;}
+
+  .float-stoppen {clear: both;}
+
+  figure[class~="float-rechts"],
+  figure[class~="float-links"] {
+    text-align: center;
+  }
+
+/* basis.css Ende */
+  

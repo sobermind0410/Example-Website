@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="de" id="#top" class="no-js">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Über uns - Einstiegin HTML + CSS</title>
+<meta name="description" content="Beschreibung für diese Webseite">
+
+<link href="css/style.css" rel="stylesheet">
+
+<script>
+	document.documentElement.classList.remove('no-js');
+	document.documentElement.classList.add('js');
+</script>
+
+</head>
+
+<body class="seite-ueber-uns">
+
+<!-- Kopfbereich -->
+<header class="site-header">
+	<div class="inside">
+		<h1 class="site-logo">
+			<a href="index.html">
+			<img src="bilder/html-und-css-logo-222.png" 
+			srcset="bilder/html-und-css-logo-444.png 2x"
+			alt="HTML und CSS" width="222" height="36">
+		</a>
+		</h1>
+		<p>Webseiten erstellen und gestalten</p>
+	</div>
+</header>
+
+<!-- Navigation -->
+<nav class="site-nav">
+	<div class="inside">
+
+		<button class="menubutton" onclick="this.classList.toggle('showmenu')">Menü</button>
+		<ul>
+			<li><a href="index.html">Startseite</a></li>
+			<li><a href="news.html">News</a></li>
+			<li class="current"><a href="ueber-uns.html">Über uns</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</ul> 
+	</div>
+</nav>
+
+<!-- Inhaltsbereich -->
+<main class="site-content">
+	<div class="inside">
+
+		<section class="content-intro float-umschliessen">
+			<h2>Über uns</h2>
+			<figure class="float-rechts">
+				<img src="bilder/waldemar-weber-150.png" 
+				srcset="bilder/waldemar-weber-300.png 2x"
+				alt="Marco Vollmann"
+				width="150"
+				height="150">
+			<figcaption>Der Autor</figcaption>
+			</figure>
+			<p>Auch gibt es niemanden, der den Schmerz an sich liebt, sucht oder wünscht, nur, weil er Schmerz ist, es sei denn, es kommt zu zufälligen Umständen, in denen Mühen und Schmerz ihm große Freude bereiten können.</p>
+			<p>Um ein triviales Beispiel zu nehmen, wer von uns unterzieht sich je anstrengender körperlicher Betätigung, außer um Vorteile daraus zu ziehen? Aber wer hat irgend ein Recht, einen Menschen zu tadeln, der die Entscheidung trifft, eine Freude zu genießen, die keine unangenehmen Folgen hat, oder einen, der Schmerz vermeidet, welcher keine daraus resultierende Freude nach sich zieht? Auch gibt es niemanden, der den Schmerz</p>
+		</section>
+
+		<section class="team">
+			<h2>Das Team</h2>
+			<ul class="mitglieder">
+			  <li class="mitglied">
+				<h3>Autor</h3> 
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis elit sed nisi lobortis vestibulum non et orci.</p>
+			  </li> 
+			  <li class="mitglied">
+				<h3>Fachlektorin</h3> 
+				<p>Nunc nisi justo, placerat id elit eget, ullamcorper dictum mauris. Donec molestie, orci et tristique lacinia, nisl dolor volutpat urna, at euismod eros orci ut massa.</p>
+			  </li> 
+			  <li class="mitglied">
+				<h3>Lektorat</h3> 
+				<p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi nunc neque, ullamcorper quis mi non,</p>
+			  </li> 
+			   <li class="mitglied">
+				<h3>Korrektorat</h3> 
+				<p>Duis cursus, quam id elementum blandit, turpis nisi consectetur velit, dignissim dapibus lectus nunc nec libero. </p>
+			  </li> 
+			  <li class="mitglied">
+				<h3>Herstellung</h3> 
+				<p>Sed purus quam, molestie eu tortor sagittis, ultricies semper tortor. Vivamus venenatis imperdiet mauris nec rutrum. </p>
+			  </li> 
+			  <li class="mitglied">
+				<h3>Vertrieb</h3> 
+				<p>Cras vel nibh varius, molestie est ac, iaculis erat. Suspendisse convallis massa eget erat porttitor, eu dictum nibh vestibulum. </p>
+			  </li> 
+			</ul>
+		  </section>        
+		  
+	</div>
+</main>
+
+<!-- Fußbereich -->
+<footer class="site-footer">
+	<div class="inside">
+		<nav class="footer-nav">
+			<ul>
+				<li><a href="#">Impressum</a></li>
+				<li><a href="#">Datenschutz</a></li>
+				<li><a href="#top">Nach oben</a></li>
+			</ul>
+		</nav>
+	</div>
+</footer>
+
+</body>
+
+</html>

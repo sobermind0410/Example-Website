@@ -1,0 +1,116 @@
+.site-nav {
+    background-color: #333;
+    color: white;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 6px rgb(51,51,51,0.3);
+}
+
+.site-nav .inside {
+    padding: 0;
+}
+
+.site-nav ul {
+    display: flex;
+    flex-flow: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-nav a {
+    display: block;
+    text-decoration: none;
+    background: #333; color: white;
+    padding: .5rem 1rem;
+}
+
+.site-nav a:hover, .site-nav a:focus {
+    background: #07b;
+    color: white;
+}
+
+.current a {
+    background: #666;
+    color: white;
+    text-decoration: underline;
+}
+
+
+.no-js .menubutton { 
+    display: none;
+}
+
+.js .menubutton { 
+    display: flex; 
+    align-items: center; 
+    
+    cursor: pointer;
+    background: inherit; 
+    color: white;
+    font: inherit; 
+    text-align: center; 
+    
+    padding: 0.5rem 1rem; 
+    border: 0; 
+    margin: 0; 
+}
+
+.js .menubutton::before {
+    content: url(../bilder/menuburger.svg); 
+    width: 1rem; 
+    height: 1rem; 
+    margin-right: 0.25rem; 
+}
+
+/**
+  * Navigationsliste ausblenden 
+  */
+  .js .site-nav ul {
+    max-height: 0; 
+    overflow: hidden; 
+} 
+
+/**
+  * Navigationsliste einblenden 
+  * Klick/Druck auf den Button fügt im HTML .showmenu hinzu 
+  */    
+  .js .showmenu + ul {
+    max-height: 100rem; 
+    transition: max-height 0.5s ease-in-out;  
+    overflow: auto; 
+  }
+
+  .js .showmenu.menubutton::before {
+    content: url(../bilder/menuclose.svg); 
+}    
+  
+/**
+  * Horizontale Navigation für breitere Viewports  
+  */
+  @media screen and (min-width: 600px) {
+    .menubutton { 
+        display: none !important; 
+    } 
+    .site-nav { 
+        position: sticky; 
+        top: 0; 
+    } 
+    .site-nav .inside {
+        padding: 0 1rem; 
+    }
+    .site-nav ul { 
+        max-height: none !important; 
+        flex-flow: row; 
+        padding: 0; 
+    }
+    .site-nav li {
+        flex: 1; 
+        max-width: 10rem; 
+        text-align: center; 
+        border-left: 1px solid #eee; 
+    }
+    .site-nav li:last-child { 
+        border-right: 1px solid #eee; 
+    }
+
+} /* Ende @media */

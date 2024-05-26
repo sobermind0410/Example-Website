@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="de" id="#top" class="no-js">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>News - Einstiegin HTML + CSS</title>
+<meta name="description" content="Beschreibung für diese Webseite">
+
+<link href="css/style.css" rel="stylesheet">
+
+<script>
+	document.documentElement.classList.remove('no-js');
+	document.documentElement.classList.add('js');
+</script>
+</head>
+
+<body class="seite-news">
+
+<!-- Kopfbereich -->
+<header class="site-header">
+	<div class="inside">
+		<h1 class="site-logo">
+			<a href="index.html">
+			<img src="bilder/html-und-css-logo-222.png" 
+			srcset="bilder/html-und-css-logo-444.png 2x"
+			alt="HTML und CSS" width="222" height="36">
+		</a>
+		</h1>
+		<p>Webseiten erstellen und gestalten</p>
+	</div>
+</header>
+
+<!-- Navigation -->
+<nav class="site-nav">
+	<div class="inside">
+
+		<button class="menubutton" onclick="this.classList.toggle('showmenu')">Menü</button>
+		<ul>
+			<li><a href="index.html">Startseite</a></li>
+			<li class="current"><a href="news.html">News</a></li>
+			<li><a href="ueber-uns.html">Über uns</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+		</ul> 
+	</div>
+</nav>
+
+<!-- Inhaltsbereich -->
+<main class="site-content">
+	<div class="inside">
+		<section class="content-intro">
+			<h2>News</h2>
+			<p>Neues aus der Weltgeschichte. Wir veröffentlichen hier in unregelmäßigen 
+				Abständen neue Beiträge, die Sie hoffentlich interessant finden.</p>
+		</section>
+
+		<section class="beitragsliste">
+			<h2 class="visually-hidden">Beiträge</h2>
+
+			<article>
+				<header>
+				<h3>Webstandards</h3>
+				<p class="beitragsinfo">
+					<span class="autor">Peter Müller</span> |
+					<time datetime="2020-06-25"> 25. Juni 2020</time>
+				</p>
+				</header>
+				<p>Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. Ma</p>
+				<p><a href="#" class="read-more-link">Weiterlesen...</a></p>
+			</article>
+
+			<article>
+				<header>
+				<h3>Wie ein Hund!</h3>
+				<p class="beitragsinfo">
+					<span class="autor">Franz Kafka</span> |
+					<time datetime="1825-01-12"> 12. Januar 1825</time>
+				</p>
+				</header>
+				<p>Jemand musste Josef K. verleumdet haben, denn ohne dass er etwas Böses getan hätte, wurde er eines Morgens verhaftet. »Wie ein Hund!« sagte er, es war, als sollte die Scham ihn überleben.</p>
+				<p><a href="#" class="read-more-link">Weiterlesen...</a></p>
+			</article>
+
+			<article>
+				<header>
+				<h3>Trappatoni</h3>
+				<p class="beitragsinfo">
+					<span class="autor">Giovanni Trappatoni</span> |
+					<time datetime="1999-10-03"> 03. Oktober 1999</time>
+				</p>
+				</header>
+				<p>Es gibt im Moment in diese Mannschaft, oh, einige Spieler vergessen ihnen Profi was sie sind. Ich lese nicht sehr viele Zeitungen, aber ich habe gehört viele Situationen.</p>
+				<p><a href="#" class="read-more-link">Weiterlesen...</a></p>
+			</article>
+
+		</section> 
+		<!-- Ende.beitragsliste-->
+
+		<aside class="linklisten">
+			<h2 class="visually-hidden">Linklisten</h2>
+			<section class="tools">
+				<h3>Tools</h3>
+				<ul>
+					<li><a href="https://code.visualstudio.com/">Visul Studio Code</a></li>
+					<li><a href="https://www.blindtextgenerator.de/">Blindtextgenerator</a></li>
+					<li><a href="https://validator.w3.org/">HTML-Validator</a></li>
+				</ul>
+			</section>
+
+			<section class="referenzen">
+				<h3>Referenzen</h3>
+				<ul>
+					<li><a href="#">HTML-Elemente (MDN)</a></li>
+					<li><a href="#">HTML-Attribute (MDN)</a></li>
+					<li><a href="#">Farbnamen (SelfHTML)</a></li>
+				</ul>
+			</section>
+		</aside>
+	</div>
+</main>
+
+<!-- Fußbereich -->
+<footer class="site-footer">
+	<div class="inside">
+		<nav class="footer-nav">
+			<ul>
+				<li><a href="#">Impressum</a></li>
+				<li><a href="#">Datenschutz</a></li>
+				<li><a href="#top">Nach oben</a></li>
+			</ul>
+		</nav>
+	</div>
+</footer>
+
+</body>
+
+</html>
